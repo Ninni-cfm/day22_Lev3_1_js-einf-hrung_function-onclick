@@ -18,8 +18,33 @@ function changeColors4() {
     setColors("#0b0e69", "#2accfe");
 }
 
-function setColors(bgcolor, fgcolor) {
-    // console.log("setColors()");
-    document.getElementById("headline").style.color = fgcolor;
-    document.body.style.backgroundColor = bgcolor;
+function changeColorsRandom() {
+    console.log('changeColorsRandom()');
+
+    let fgColor = getRandomColor();
+    let bgColor = getRandomColor();
+
+    document.getElementById("random1").style.color = fgColor;
+    document.getElementById("random2").style.color = bgColor;
+    document.getElementById("ball5").style.background = "linear-gradient(45deg, " + bgColor + " 0 50%, " + fgColor + " 50% 100%)";
+
+    setColors(bgColor, fgColor);
+}
+
+function setColors(bgColor, fgColor) {
+    document.getElementById("headline").style.color = fgColor;
+    document.body.style.backgroundColor = bgColor;
+}
+
+function getRandomColor() {
+    let r = getRandomInt(0, 255);
+    let g = getRandomInt(0, 255);
+    let b = getRandomInt(0, 255);
+    return "rgb(" + r + ", " + g + ", " + b + ")";
+}
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min;
 }

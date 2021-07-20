@@ -3,11 +3,14 @@ body {
 }
 
 div div {
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 200px;
+    max-height: 200px;
     display: inline-block;
-    padding: 80px;
     border: 3px solid black;
-    border-radius: 80px;
-    margin: 5% 2%;
+    border-radius: 200px;
+    margin: 5% 1%;
     transition: 0.3s;
 }
 
@@ -32,4 +35,26 @@ div div:active {
 }
 #ball4 {
     background: linear-gradient(45deg, #0b0e69 0 50%, #2accfe 50% 100%);
+}
+#ball5 {
+    background: linear-gradient(
+        45deg,
+        #fff 0 49.5%,
+        #000 49.5% 50.5%,
+        #fff 50.5% 100%
+    );
+}
+div span {
+    position: relative;
+    font-size: 72px;
+    font-weight: bold;
+}
+
+div span:first-of-type {
+    top: 90px;
+    left: -10px;
+}
+div span:last-of-type {
+    top: 20px;
+    left: +10px;
 }
