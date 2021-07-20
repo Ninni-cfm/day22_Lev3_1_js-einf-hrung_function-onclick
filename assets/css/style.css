@@ -2,7 +2,7 @@ body {
     text-align: center;
 }
 
-div div {
+div {
     min-width: 200px;
     max-width: 200px;
     min-height: 200px;
@@ -14,7 +14,7 @@ div div {
     transition: 0.3s;
 }
 
-div div:hover {
+div:hover {
     box-shadow: 10px 10px 20px #000000c0;
     transition: 0.5s;
 }
@@ -49,11 +49,11 @@ div span {
     font-size: 72px;
     font-weight: bold;
 }
-
 div span:first-of-type {
     top: 90px;
     left: -10px;
 }
+
 div span:last-of-type {
     top: 20px;
     left: +10px;

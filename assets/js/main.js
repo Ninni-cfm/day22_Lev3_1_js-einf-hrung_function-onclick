@@ -32,7 +32,7 @@ function changeColorsRandom() {
 }
 
 function setColors(bgColor, fgColor) {
-    document.getElementById("headline").style.color = fgColor;
+    document.body.style.color = fgColor;
     document.body.style.backgroundColor = bgColor;
 }
 
