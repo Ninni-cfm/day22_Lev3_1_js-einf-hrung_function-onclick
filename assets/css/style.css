@@ -1,12 +1,18 @@
+/* little bit elementar styling */
 body {
     text-align: center;
 }
+h1 {
+    font-size: 5vmin;
+    padding-bottom: 10vmin;
+}
 
+/* build the balls */
 div {
-    min-width: 200px;
-    max-width: 200px;
-    min-height: 200px;
-    max-height: 200px;
+    width: 200px;
+    height: 150px;
+    padding-top: 50px;
+    font-size: 96px;
     display: inline-block;
     border: 3px solid black;
     border-radius: 200px;
@@ -14,47 +20,31 @@ div {
     transition: 0.3s;
 }
 
+/* some effects for hover and active */
 div:hover {
-    box-shadow: 10px 10px 20px #000000c0;
+    box-shadow: 0px 20px 20px #000000c0;
     transition: 0.5s;
 }
-
-div div:active {
+div:active {
     transform: translate(5px, 5px);
     transition: 0.3s;
 }
 
+/* specific colors for each ball */
 #ball1 {
-    background: linear-gradient(45deg, #1d8f53 0 50%, #6e0e60 50% 100%);
+    background: linear-gradient(45deg, #1d8f53 50%, #6e0e60 50%);
 }
 #ball2 {
-    background: linear-gradient(45deg, #454270 0 50%, #d9ab42 50% 100%);
+    background: linear-gradient(45deg, #454270 50%, #d9ab42 50%);
 }
 #ball3 {
-    background: linear-gradient(45deg, #00011f 0 50%, #c65d0c 50% 100%);
+    background: linear-gradient(45deg, #00011f 50%, #c65d0c 50%);
 }
 #ball4 {
-    background: linear-gradient(45deg, #0b0e69 0 50%, #2accfe 50% 100%);
-}
-#ball5 {
-    background: linear-gradient(
-        45deg,
-        #fff 0 49.5%,
-        #000 49.5% 50.5%,
-        #fff 50.5% 100%
-    );
-}
-div span {
-    position: relative;
-    font-size: 72px;
-    font-weight: bold;
-}
-div span:first-of-type {
-    top: 90px;
-    left: -10px;
+    background: linear-gradient(45deg, #0b0e69 50%, #2accfe 50%);
 }
 
-div span:last-of-type {
-    top: 20px;
-    left: +10px;
+/* and the special one... */
+#ball5 {
+    background: linear-gradient(45deg, white 49.5%, #000 50%, white 50.5%);
 }
